@@ -1,0 +1,7 @@
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.domain\bin\Release\clearviewoptical.domain.exe.config
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.domain\bin\Release\clearviewoptical.domain.exe
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.domain\bin\Release\clearviewoptical.domain.pdb
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.domain\obj\Release\clearviewoptical.domain.csprojAssemblyReference.cache
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.domain\obj\Release\clearviewoptical.domain.csproj.CoreCompileInputs.cache
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.domain\obj\Release\clearviewoptical.domain.exe
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.domain\obj\Release\clearviewoptical.domain.pdb

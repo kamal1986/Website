@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="clearviewopticalModelStoreContainer" CdmEntityContainer="clearviewopticalEntities">
+    <EntitySetMapping Name="ProductCatMasters">
+      <EntityTypeMapping TypeName="clearviewopticalModel.ProductCatMaster">
+        <MappingFragment StoreEntitySet="ProductCatMaster">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ProductcatName" ColumnName="ProductcatName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductFeatureLines">
+      <EntityTypeMapping TypeName="clearviewopticalModel.ProductFeatureLine">
+        <MappingFragment StoreEntitySet="ProductFeatureLine">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ProductSubId" ColumnName="ProductSubId" />
+          <ScalarProperty Name="FeatureLine" ColumnName="FeatureLine" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductMasters">
+      <EntityTypeMapping TypeName="clearviewopticalModel.ProductMaster">
+        <MappingFragment StoreEntitySet="ProductMaster">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ProductCat" ColumnName="ProductCat" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Image4" ColumnName="Image4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductSubFeatureLines">
+      <EntityTypeMapping TypeName="clearviewopticalModel.ProductSubFeatureLine">
+        <MappingFragment StoreEntitySet="ProductSubFeatureLine">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ProductSubFeature" ColumnName="ProductSubFeature" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

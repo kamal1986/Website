@@ -1,0 +1,10 @@
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.dataservice\bin\Debug\netcoreapp2.2\clearviewoptical.dataservice.deps.json
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.dataservice\bin\Debug\netcoreapp2.2\clearviewoptical.dataservice.dll
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.dataservice\bin\Debug\netcoreapp2.2\clearviewoptical.dataservice.pdb
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.dataservice\obj\Debug\netcoreapp2.2\clearviewoptical.dataservice.csproj.CoreCompileInputs.cache
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.dataservice\obj\Debug\netcoreapp2.2\clearviewoptical.dataservice.AssemblyInfoInputs.cache
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.dataservice\obj\Debug\netcoreapp2.2\clearviewoptical.dataservice.AssemblyInfo.cs
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.dataservice\obj\Debug\netcoreapp2.2\clearviewoptical.dataservice.dll
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.dataservice\obj\Debug\netcoreapp2.2\clearviewoptical.dataservice.pdb
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.dataservice\bin\Debug\netcoreapp2.2\clearviewoptical.dataservice.runtimeconfig.json
+D:\PROJECT2017\clearviewoptical\clearviewoptical\clearviewoptical.dataservice\bin\Debug\netcoreapp2.2\clearviewoptical.dataservice.runtimeconfig.dev.json

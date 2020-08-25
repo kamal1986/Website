@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Clear View Optical</title>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+    </environment>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/ImageSlide.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/css/mainmenu.css" rel="stylesheet" />
+    <link href="~/css/sm-core-css.css" rel="stylesheet" />
+    <link href="~/css/sm-blue/sm-blue.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+
+        <nav id="main-nav" >
+            <!-- Sample menu definition -->
+            <ul id="main-menu" class="sm sm-blue">
+                <li><a asp-area="" asp-controller="Home" asp-action="Index" >Home</a></li>
+                <li><a asp-area="" asp-controller="Company" asp-action="Index" >Company</a></li>
+                <li>
+                    <a href="#">Store</a>
+                    <ul>
+
+                        <li><a asp-area="" asp-controller="StoreLocation" asp-action="Index">Store Location</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Product</a>
+                    <ul>
+
+                        <li>
+                            <a href="#">Frames</a>
+                            <ul>
+                                <li><a  asp-area="" asp-controller="KidsFrames" asp-action="Index">Men's Frames</a></li>
+                                <li><a asp-area="" asp-controller="MensFrames" asp-action="Index">Women Frames</a></li>
+                                <li><a  asp-area="" asp-controller="WomenFrames" asp-action="Index">Kid's Vadikom</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Sunglasses</a>
+                            <ul>
+                                <li><a  asp-area="" asp-controller="Sunglasses" asp-action="Index">Men's Sunglasses</a></li>
+                                <li><a asp-area="" asp-controller="Sunglasses" asp-action="Womens">Women Sunglasses</a></li>
+                                <li><a  asp-area="" asp-controller="Sunglasses" asp-action="Kids">Kid's Sunglasses</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Branded Eyewear</a></li>
+                        <li><a href="#">Contact Lenses</a></li>
+                        <li><a href="#">Spectacle Lenses</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+
+                    <ul>
+
+                        <li>
+                            <a href="#">Frames</a>
+                            <ul>
+                                <li><a href="#">Men's Frames</a></li>
+                                <li><a href="#">Women Frames</a></li>
+                                <li><a href="#">Kid's Vadikom</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Sunglasses</a>
+                            <ul>
+                                <li><a href="#">Men's Sunglasses</a></li>
+                                <li><a href="#">Women Sunglasses</a></li>
+                                <li><a href="#">Kid's Sunglasses</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Branded Eyewear</a></li>
+                        <li><a href="#">Contact Lenses</a></li>
+                        <li><a href="#">Spectacle Lenses</a></li>
+
+                    </ul>
+
+                </li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Term & Condition</a></li>
+                <li> <a href="#">Privacy</a></li>
+                <li> <a href="#">Policy</a></li>
+                <li>
+                    <a href="#">Login</a>
+                    <ul class="mega-menu">
+                        <li>
+                            <!-- The mega drop down contents -->
+                            <div style="width:400px;max-width:100%;">
+                                <div style="padding:5px 24px;">
+                                  <p>Page under Construction</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+
+    </header>
+    <div class="container">
+        @*<partial name="_CookieConsentPartial" />*@
+        <br />
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - clearviewoptical - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @*<script src="~/js/SlideShow.js" asp-append-version="true"></script>*@
+    <script src="~/js/jquery.smartmenus.js"></script>
+    <script src="~/js/jquery.smartmenus.min.js"></script>
+
+    @*<script src="~/js/MenuJs.js"></script>*@
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

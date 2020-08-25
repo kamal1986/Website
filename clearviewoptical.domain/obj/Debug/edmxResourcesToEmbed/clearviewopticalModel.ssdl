@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="clearviewopticalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ProductCatMaster">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductcatName" Type="varchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ProductFeatureLine">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductSubId" Type="bigint" />
+    <Property Name="FeatureLine" Type="varchar" MaxLength="200" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="ProductID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ProductMaster">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductName" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="ProductCat" Type="bigint" />
+    <Property Name="Image1" Type="varchar" MaxLength="50" />
+    <Property Name="Image2" Type="varchar" MaxLength="50" />
+    <Property Name="Image3" Type="varchar" MaxLength="50" />
+    <Property Name="Image4" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ProductSubFeatureLine">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductSubFeature" Type="varchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ProductID" Type="bigint" />
+  </EntityType>
+  <Association Name="FK_ProductFeatureLine_ProductFeatureLine_ProductID">
+    <End Role="ProductMaster" Type="Self.ProductMaster" Multiplicity="0..1" />
+    <End Role="ProductFeatureLine" Type="Self.ProductFeatureLine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductMaster">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductFeatureLine">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductMaster_ProductMaster_ProductCatID">
+    <End Role="ProductCatMaster" Type="Self.ProductCatMaster" Multiplicity="0..1" />
+    <End Role="ProductMaster" Type="Self.ProductMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCatMaster">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductMaster">
+        <PropertyRef Name="ProductCat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductSubFeatureLine_ProductFeatureLine">
+    <End Role="ProductFeatureLine" Type="Self.ProductFeatureLine" Multiplicity="0..1" />
+    <End Role="ProductSubFeatureLine" Type="Self.ProductSubFeatureLine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductFeatureLine">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ProductSubFeatureLine">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="clearviewopticalModelStoreContainer">
+    <EntitySet Name="ProductCatMaster" EntityType="Self.ProductCatMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductFeatureLine" EntityType="Self.ProductFeatureLine" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductMaster" EntityType="Self.ProductMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductSubFeatureLine" EntityType="Self.ProductSubFeatureLine" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ProductFeatureLine_ProductFeatureLine_ProductID" Association="Self.FK_ProductFeatureLine_ProductFeatureLine_ProductID">
+      <End Role="ProductMaster" EntitySet="ProductMaster" />
+      <End Role="ProductFeatureLine" EntitySet="ProductFeatureLine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductMaster_ProductMaster_ProductCatID" Association="Self.FK_ProductMaster_ProductMaster_ProductCatID">
+      <End Role="ProductCatMaster" EntitySet="ProductCatMaster" />
+      <End Role="ProductMaster" EntitySet="ProductMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductSubFeatureLine_ProductFeatureLine" Association="Self.FK_ProductSubFeatureLine_ProductFeatureLine">
+      <End Role="ProductFeatureLine" EntitySet="ProductFeatureLine" />
+      <End Role="ProductSubFeatureLine" EntitySet="ProductSubFeatureLine" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

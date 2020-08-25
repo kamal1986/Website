@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1169
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clearviewoptical.domain", "clearviewoptical.domain\clearviewoptical.domain.csproj", "{15BD735B-BD03-4F3F-9926-096885E3F35D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "clearviewoptical.dataservice", "clearviewoptical.dataservice\clearviewoptical.dataservice.csproj", "{6C6139C4-63D3-4F41-96A8-D3B72FBF1ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clearviewoptical.WebService", "clearviewoptical.WebService\clearviewoptical.WebService.csproj", "{C633C23E-AED9-46F9-AFF2-8E7DDBDEA7B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "clearviewoptical", "clearviewoptical\clearviewoptical.csproj", "{A399A5BF-EB74-456E-8DEF-FDA7A09311D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15BD735B-BD03-4F3F-9926-096885E3F35D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15BD735B-BD03-4F3F-9926-096885E3F35D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15BD735B-BD03-4F3F-9926-096885E3F35D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C6139C4-63D3-4F41-96A8-D3B72FBF1ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C6139C4-63D3-4F41-96A8-D3B72FBF1ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C6139C4-63D3-4F41-96A8-D3B72FBF1ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C633C23E-AED9-46F9-AFF2-8E7DDBDEA7B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C633C23E-AED9-46F9-AFF2-8E7DDBDEA7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C633C23E-AED9-46F9-AFF2-8E7DDBDEA7B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A399A5BF-EB74-456E-8DEF-FDA7A09311D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A399A5BF-EB74-456E-8DEF-FDA7A09311D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A399A5BF-EB74-456E-8DEF-FDA7A09311D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A399A5BF-EB74-456E-8DEF-FDA7A09311D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5D04770-1BD6-4EF8-BCE9-C36F18524DDC}
+	EndGlobalSection
+EndGlobal
